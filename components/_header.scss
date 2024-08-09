@@ -1,4 +1,4 @@
-.header_big{
+.header_big {
     width: 100%;
     height: 74px;
     position: fixed;
@@ -7,51 +7,52 @@
     right: 0;
     left: 0;
     z-index: 55;
+
     .header {
         width: 100%;
         height: 74px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
+
         .logojon {
             max-width: 105px;
             height: 32px;
         }
-    
+
         .header__left__content {
             display: flex;
             align-items: center;
             gap: 24px;
-    
+
             .header_content {
                 height: auto;
                 display: flex;
                 align-items: center;
                 gap: 32px;
-    
+
                 .header_content_list {
                     color: $col-t;
                 }
             }
-    
+
             .menu {
                 color: $col-t;
                 font-size: 26px;
                 font-weight: 900;
                 cursor: pointer;
                 display: none;
-    
+
                 &:hover {
                     color: dodgerblue;
                 }
             }
-    
+
             .header__left__content_btn_gr {
                 display: flex;
                 align-items: center;
                 gap: 16px;
-    
+
                 .btn {
                     padding: 9px 21px;
                     display: flex;
@@ -63,12 +64,12 @@
                     border: 1px solid transparent;
                     transition: .3s;
                     color: #FFF;
-    
+
                     .shop_icon {
                         font-size: 20px;
                         font-weight: 900;
                     }
-    
+
                     &:hover {
                         background: white;
                         color: $col-t;
@@ -78,31 +79,35 @@
                 }
             }
         }
-    
+
     }
 }
 
 
 @media (max-width: 900px) {
-    .header {
-        .header__left__content {
-            .header_content {
-                display: none;
-            }
+    .header_big {
+        .header {
+            .header__left__content {
+                .header_content {
+                    display: none;
+                }
 
-            .menu {
-                display: block;
+                .menu {
+                    display: block;
+                }
             }
         }
-    }
 
+    }
 }
 
 @media (max-width: 480px) {
-    .header {
-        .header__left__content {
-            .header__left__content_btn_gr {
-                display: none;
+    .header_big {
+        .header {
+            .header__left__content {
+                .header__left__content_btn_gr {
+                    display: none;
+                }
             }
         }
     }
